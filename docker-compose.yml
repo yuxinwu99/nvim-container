@@ -1,0 +1,11 @@
+
+version: "3.8"
+
+services:
+  nvim:
+    build: .
+    volumes:
+      - ./workspace:/workspace
+      - ./nvim:/root/.config/nvim
+    working_dir: /workspace
+    tty: true
